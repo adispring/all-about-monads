@@ -12,7 +12,7 @@ All_About_Monads 原文地址：https://wiki.haskell.org/All_About_Monads
 
 ### 第一部分 - 理解 Monads
 
-* 简介
+* 引言
   * 什么是 Monad？
   * 为什么我应该努力搞懂 monads？
   
@@ -44,7 +44,104 @@ All_About_Monads 原文地址：https://wiki.haskell.org/All_About_Monads
   * 在 Monad 模块中
   * 总结
 
-## 简介
+### 第二部分 - 一系列标准 Monads
+
+* 引言
+
+* Identity monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+  
+* Maybe monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* Error monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* List monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* IO monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* State monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* Reader monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* Writer monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+* Continuation monad
+  * 概述
+  * 目的
+  * 定义
+  * 示例
+
+### 第三部分 - 现实世界中的 Monad
+
+* 引言
+
+* 组合 monads 时存在的疼点
+  * 嵌套的 Monads
+  * 组合的 Monads
+
+* Monad transformer
+
+* Monad type 构造器
+
+* 标准 monad transformers
+  * MonadTrans 和 MonadIO classes
+  * 标准 monads 的 各种 Transformer 版本
+  
+* 剖析一个 monad transformer
+  * 组合的 monad 的定义
+  * 定义 lifting 函数
+  * Functors(函子)
+
+* 更多 Monad transformers 示例
+  * 带 IO 的 WriterT
+  * 带 IO 的 ReaderT
+  * 带 List 的 StateT
+
+* 管理 transformer 栈
+  * 选择正确的顺序
+  * 多个 transformers 的例子
+  * 重的 lifting （提升）
+
+* 继续探索 
+
+### 附录
+
+* 附录 I - Monad 的物理类比
+
+* 附录 II - Haskell 代码示例
+
+## 引言
 
   * 什么是 Monad？
   * 为什么我应该尽力搞懂 monads？
